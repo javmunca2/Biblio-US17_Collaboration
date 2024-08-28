@@ -1,12 +1,135 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML>
-<HEAD>
-</HEAD>
-<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EF" VLINK="#55188A" ALINK="#FF
-0000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblio-US17: Historical of proposals received</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./cybersecurity-background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #2e2e3e;
+            color: #ffffff; /* Letra en color blanco fuerte */
+            margin: 0;
+            padding: 0;
+        }
 
-<H1>Arquitectura de Redes (GIERM)!!</H1>
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(19, 19, 43, 0.9);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-Ahora ya puede realizar su captura.
-</BODY>
-</HTML>
+        header img {
+            height: 80px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ffcc00;
+            text-align: center;
+            margin: 20px 0;
+            background-color: rgba(19, 19, 43, 0.8);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        p {
+            padding: 0 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            line-height: 1.6;
+            color: #ffffff; /* Letra en color blanco fuerte */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table, th, td {
+            border: 1px solid #ffcc00;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center; /* Centrado horizontal del contenido */
+        }
+
+        th {
+            background-color: rgba(19, 19, 43, 0.9);
+            color: #ffcc00;
+        }
+
+        td {
+            background-color: rgba(40, 40, 70, 0.9);
+        }
+
+        tr:hover {
+            background-color: rgba(51, 51, 84, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <header>
+	   <img src="./marca-US-principal.jpg" alt="University of Seville Logo">
+        <h1>Biblio-US17: Historical of proposals received</h1>
+	   <img src="./logo_dit.png" alt="DIT Logo">
+    </header>
+
+    <main>
+        <p>
+            The dataset Biblio-US17 (accessible at 
+            <a href="https://doi.org/10.12795/11441/148254" target="_blank">https://doi.org/10.12795/11441/148254</a>) 
+            contains a set of anonymized and labeled HTTP requests (selected fields) from the logs of a real-in-production web server 
+            at the library of the University of Seville during 6.5 months in 2017. Each record includes the method, URI and associated 
+            response code and size for every HTTP request received by the web server.
+        </p>
+        <p>
+            The dataset has been sanitized using a supervised methodology as proposed in:
+            D&iacute;az-Verdejo, Jes&uacute;s E.; Estepa, Antonio; Estepa, Rafael; Madinabeitia, German; Mu&ntilde;oz-Calle, Javier, 
+            "A methodology for conducting efficient sanitization of HTTP training datasets", Future Generation Computer Systems, 
+            vol. 109, pp. 67-82, 2020. 
+            <a href="https://doi.org/10.1016/j.future.2020.03.033" target="_blank">https://doi.org/10.1016/j.future.2020.03.033</a>.
+        </p>
+        <p>
+            We have labeled each record as either normal or attack after a thorough semi-automated process that involved signature-based 
+            detection and detection of anomalies in the vocabulary observed in the URIs.
+        </p>
+        <p>
+            To allow the collaboration of researchers from the scientific community in the refinement and maintenance of the dataset, 
+            we offer the form 
+            <a href="https://javmunca2.github.io/Biblio-US17_Collaboration/form.html" target="_blank">
+            https://javmunca2.github.io/Biblio-US17_Collaboration/form.html</a>.
+        </p>
+        <p>The proposals received through that form are summarized below:</p>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>URI Identifier</th>
+                <th>Proposed label</th>
+                <th>Explanation</th>
+            </tr>
+            <!-- Ejemplo de fila, puedes añadir más según sea necesario -->
+            <tr>
+                <td>2024-08-28</td>
+                <td>[00-00-A000000]</td>
+                <td>LVL1</td>
+                <td>This is an example explanation.</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
